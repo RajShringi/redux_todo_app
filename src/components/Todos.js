@@ -37,15 +37,6 @@ function Todos() {
       return;
     }
     dispatch(reOrderTodos({ todos: all, result }));
-    // if (state === "all") {
-    //   dispatch(reOrderTodos({ todos: all, result, todoState: "all" }));
-    // } else if (state === "active") {
-    //   dispatch(reOrderTodos({ todos: active, result, todosState: "active" }));
-    // } else if (state === "completed") {
-    //   dispatch(
-    //     reOrderTodos({ todos: completed, result, todoState: "completed" })
-    //   );
-    // }
   };
 
   return (
