@@ -73,6 +73,10 @@ function Todos() {
       <div className="md:hidden">
         <TodoState state={state} setState={setState} />
       </div>
+
+      <p className="text-center text-sm font-extralight mt-8 dark:text-dt-dark-grayish-blue ">
+        Drag and Drop to reorder list
+      </p>
     </div>
   );
 }
