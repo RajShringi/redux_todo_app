@@ -36,7 +36,10 @@ function Todos() {
     if (!result.destination) {
       return;
     }
-    dispatch(reOrderTodos({ todos: all, result }));
+    if (state === "all") {
+      dispatch(reOrderTodos({ todos: all, result }));
+    }
+    return;
   };
 
   return (
@@ -75,7 +78,7 @@ function Todos() {
       </div>
 
       <p className="text-center text-sm font-extralight mt-8 dark:text-dt-dark-grayish-blue ">
-        Drag and Drop to reorder list
+        {state === "all" && "Drag and Drop to reorder list"}
       </p>
     </div>
   );
